@@ -3,10 +3,10 @@ This is a gold mining simulator "game".
 
 change funtion clear() if you are not on windows.
 
-windows
+windows - 
   def clear():
       os.system("cls")
       
-linux/unix
+linux/unix - 
   def clear():
       os.system("clear")
