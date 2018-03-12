@@ -2,24 +2,19 @@ import os
 import time
 import random
 
+mine_msg = ["mining.", "mining..", "mining..."]
+
 def clear():
     os.system("cls")
 
 def miner():
-    x = random.randint(1, 100)
-    clear()
-    print "mining."
-    time.sleep(1.5)
-    clear()
-    print "mining.."
-    time.sleep(1.5)
-    clear()
-    print "mining..."
-    time.sleep(1.5)
-    clear()
-    print "+" +str(x)+ " gold!"
-    time.sleep(1.5)
-    clear()
+    x = 0
+    for i in range(0, 3):
+        clear()
+        print(mine_msg[i])
+        x = x + random.randint(1, 50)
+        time.sleep(1.5)
+    print("gold mined: " + str(x))
     return(x)
 
 def helper():
