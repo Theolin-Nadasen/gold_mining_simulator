@@ -5,7 +5,7 @@ import random
 mine_msg = ["mining.", "mining..", "mining..."]
 
 def clear():
-    os.system("cls")
+    os.system("clear")
 
 def miner():
     x = 0
